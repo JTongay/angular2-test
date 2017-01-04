@@ -1,6 +1,7 @@
 <p>
   home works!
 </p>
+<button (click)="goDirectory()">Directory</button>
 <p>
   {{homeTitle}}
 </p>
@@ -11,8 +12,8 @@
 <input type="text" [(ngModel)]="ninja.name" name="" id="">
 <label for="">Belt</label>
 <input type="text" [(ngModel)]="ninja.belt" name="" value="">
-<p>{{ninja.name}}</p>
-<p>{{ninja.belt}}</p>
+<p>Name: {{ninja.name}}</p>
+<p>Belt: {{ninja.belt}}</p>
 <!-- <button (click)="fireYellEvent($event)">Hit Me</button> -->
 <!-- <ng-content></ng-content> -->
 

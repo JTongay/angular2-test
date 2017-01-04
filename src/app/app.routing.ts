@@ -11,6 +11,10 @@ const APP_ROUTES: Routes = [
   {
     path: 'directory',
     component: DirectoryComponent
+  },
+  {
+    path: 'directory/:ninja',
+    component: DirectoryComponent
   }
 ];
 

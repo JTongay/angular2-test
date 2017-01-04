@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router, ActivatedRoute} from '@angular/router'
 
 @Component({
   selector: 'app-directory',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectoryComponent implements OnInit {
 
-  constructor() { }
+  ninja: string;
+
+  constructor(private router: Router, private activatedroute: ActivatedRoute) {
+    this.ninja = activatedroute.snapshot.params['ninja']
+  }
+
+  goHome(){
+    this.router.navigate(['/'])
+  }
 
   ngOnInit() {
   }
