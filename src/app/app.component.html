@@ -8,6 +8,8 @@
   </nav>
 </header>
 <section id="main">
-  <!-- <app-home [ninja]="ninja" (onYell)="yell($event)">Hello There!</app-home> -->
+  <!-- <app-home [ninja]="ninja" (onYell)="yell($event)"></app-home> -->
+  <a [routerLink]="['']">Home</a>
+  <a [routerLink]="['directory']">Directory</a>
   <router-outlet></router-outlet>
 </section>

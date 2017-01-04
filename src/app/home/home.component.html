@@ -4,23 +4,26 @@
 <p>
   {{homeTitle}}
 </p>
-<ng-content></ng-content>
-
-<!-- property binding -->
-<input type="text" [value]="myString">
-<input type="text" [required]="myBoolean">
-<button (click)="alertMe('i like beef')">Click Me</button>
-
-<!-- or  -->
-
-<input type="text" value="{{myString}}">
-<input type="text" required="{{myBoolean}}">
-
-<!-- 2 way data binding -->
+<p>
+  {{myString}}
+</p>
 <label for="">Name</label>
 <input type="text" [(ngModel)]="ninja.name" name="" id="">
 <label for="">Belt</label>
 <input type="text" [(ngModel)]="ninja.belt" name="" value="">
 <p>{{ninja.name}}</p>
 <p>{{ninja.belt}}</p>
-<button (click)="fireYellEvent($event)">Hit Me</button>
+<!-- <button (click)="fireYellEvent($event)">Hit Me</button> -->
+<!-- <ng-content></ng-content> -->
+
+<!-- property binding -->
+<!-- <input type="text" [value]="myString">
+<input type="text" [required]="myBoolean">
+<button (click)="alertMe('i like beef')">Click Me</button> -->
+
+<!-- or  -->
+
+<!-- <input type="text" value="{{myString}}">
+<input type="text" required="{{myBoolean}}"> -->
+
+<!-- 2 way data binding -->
